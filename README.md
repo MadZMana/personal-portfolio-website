@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is my personal portfolio website. Made using HTML, CSS, Tailwind CSS, and Javascript. This website contains: Home, About, and Project page.
+My personal portfolio includes Home, About Me, and Projects in `index.html`, with inline CSS and JavaScript.
 
 ## Home
 ![Home](./screenshothome.png)
