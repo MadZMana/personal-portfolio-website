@@ -111,7 +111,7 @@
 
       .project-list > section {
         min-height: 100%;
-        padding-inline: 2rem;
+        padding: 1rem 2rem;
       }
 
       h1 {
@@ -153,9 +153,33 @@
       }
 
       .project-card {
-        padding: 1rem;
+        margin: 0;
         background-color: #1e2939;
         border-radius: 0.5rem;
+        overflow: hidden;
+      }
+
+      .project-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 45vh;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        background-color: #0a0f1c;
+      }
+
+      .project-image-placeholder {
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+        color: #9ca3af;
+        font-size: 0.75rem;
+        text-align: center;
+      }
+
+      .project-card figcaption {
+        padding: 1rem;
       }
 
       .about a,
@@ -238,7 +262,7 @@
         z-index: 1000;
       }
 
-      img {
+      aside header img {
         width: 300px;
         height: 300px;
         object-fit: cover;
@@ -269,7 +293,7 @@
         </ul>
       </nav>
       <footer>
-        <a href="mailto:24051204080@mhs.unesa.ac.id" target="_blank"
+        <a href="mailto:muadz@renaro.my.id" target="_blank"
           ><i class="fa fa-envelope fa-2x"></i
         ></a>
         <a href="https://github.com/MadZMana" target="_blank"
@@ -331,19 +355,18 @@
             </p>
           </div>
           <div>
-            <h3>CTF Participant</h3>
-            <h5>
-              > Various Competitions
+            <h3>Cohort (Data Science Specialist)</h3>
+            <h5> 
+              > Asah led by Dicoding Supported by GoTo
             </h5>
             <h5>
-              > 2024 — Present
+              > 2026
             </h5>
             <p>
-              - Participated in multiple Capture The Flag (CTF) competitions.<br />
-              - Gained hands-on experience in identifying and exploiting
-              vulnerabilities.<br />
-              - Mostly focused on Digital Forensics and Reverse Engineering
-              challenges.
+              - Learned the fundamentals of data science and machine learning.<br />
+              - Gained hands-on experience in data analysis and visualization.<br />
+              - Built a few projects in data science.<br />
+              - Learned to work with Python, Pandas, NumPy, Matplotlib, and Scikit-learn.
             </p>
           </div>
           <div>
@@ -368,17 +391,17 @@
             <li>
               <strong>Email:</strong>
               <a
-                href="mailto:24051204080@mhs.unesa.ac.id"
+                href="mailto:muadz@renaro.my.id"
                 target="_blank"
-                >24051204080@mhs.unesa.ac.id</a
+                >muadz@renaro.my.id</a
               >
             </li>
             <li>
               <strong>LinkedIn:</strong>
               <a
-                href="https://www.linkedin.com/in/muadz-abdulloh-5291502b5/"
+                href="https://www.linkedin.com/in/muadz-abdulloh/"
                 target="_blank"
-                >www.linkedin.com/in/muadz-abdulloh-5291502b5</a
+                >www.linkedin.com/in/muadz-abdulloh</a
               >
             </li>
             <li>
@@ -402,51 +425,68 @@
           tabindex="0"
         >
           <section id="project1">
-            <div class="project-card">
-              <h3>Aozora</h3>
-              <p>
-                Aozora is a Discord bot with some random features made using
-                NodeJS and Discord.js library.
-              </p>
-              <br />
-              <a
-                href="https://github.com/MadZMana/Aozora"
-                target="_blank"
-                >View Project</a
-              >
-            </div>
+            <figure class="project-card">
+              <div class="project-image project-image-placeholder">Screenshot coming soon</div>
+              <figcaption>
+                <h3>Aozora</h3>
+                <p>
+                  Aozora is a Discord bot with some random features made using
+                  NodeJS and Discord.js library.
+                </p>
+                <br />
+                <a
+                  href="https://github.com/MadZMana/Aozora"
+                  target="_blank"
+                  >View Project</a
+                >
+              </figcaption>
+            </figure>
           </section>
 
           <section id="project2">
-            <div class="project-card">
-              <h3>ncmaxxing</h3>
-              <p>
-                Ncmaxxing is a full-stack blockchain application for transparent
-                project tracking and corruption reporting. Features a React
-                frontend with cookie-based user authentication (no MetaMask
-                required) and Ethereum smart contracts for immutable data storage.
-              </p>
-              <br />
-              <a
-                href="https://github.com/CAT-Cabang-Programming/ncmaxxing"
-                target="_blank"
-                >View Project</a
-              >
-            </div>
+            <figure class="project-card">
+              <div class="project-image project-image-placeholder">Screenshot coming soon</div>
+              <figcaption>
+                <h3>ncmaxxing</h3>
+                <p>
+                  Ncmaxxing is a full-stack blockchain application for transparent
+                  project tracking and corruption reporting. Features a React
+                  frontend with cookie-based user authentication (no MetaMask
+                  required) and Ethereum smart contracts for immutable data storage.
+                </p>
+                <br />
+                <a
+                  href="https://github.com/CAT-Cabang-Programming/ncmaxxing"
+                  target="_blank"
+                  >View Project</a
+                >
+              </figcaption>
+            </figure>
           </section>
 
           <section id="project3">
-            <div class="project-card">
-              <h3>Personal Portfolio Website</h3>
-              <p>
-                A personal portfolio website built using HTML, CSS, and
-                JavaScript to showcase my projects and skills.
-              </p>
-              <br />
-              <a href="#projects" target="_blank"
-                >View Project</a
-              >
-            </div>
+            <figure class="project-card">
+              <img
+                class="project-image"
+                src="./screenshothome.png"
+                alt="Portfolio home page with a profile sidebar and an introductory heading"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                  A personal portfolio website built using HTML, CSS, and
+                  JavaScript to showcase my projects and skills.
+                </p>
+                <br />
+                <a href="#projects" target="_blank"
+                  >View Project</a
+                >
+              </figcaption>
+            </figure>
           </section>
         </div>
       </div>
@@ -490,7 +530,7 @@
         glow.style.opacity = 1;
       });
 
-      let texts = ["Student", "Backend Developer", "Cyber Security Enthusiast"];
+      let texts = ["Student", "Machine Learning Enthusiast", "Backend Developer"];
       let typewriterIndex = 0;
       let charIndex = 0;
       let curr = "";
