@@ -29,6 +29,10 @@ aside {
 main {
   flex: 1;
   height: 100vh;
+}
+
+main:not(.projects),
+.project-list {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -40,6 +44,25 @@ main section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.projects h1 {
+  padding: 1.5rem 2rem;
+}
+
+.project-list {
+  flex: 1;
+  min-height: 0;
+}
+
+.project-list > section {
+  min-height: 100%;
 }
 
 h1 {
